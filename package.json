@@ -1,6 +1,6 @@
 {
   "name": "@parker-brown-family/craft-commit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Lint git commit messages for the three-paragraph doctrine: Selected State, Underlying Problem, How Addressed.",
   "license": "MIT",
   "type": "module",
@@ -16,13 +16,24 @@
   "bin": {
     "craft-commit": "./dist/cli.js"
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "bun test",
     "prepublishOnly": "bun test && bun run build"
   },
-  "keywords": ["git", "commit", "lint", "hook", "doctrine", "narrative"],
+  "keywords": [
+    "git",
+    "commit",
+    "lint",
+    "hook",
+    "doctrine",
+    "narrative"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/parker-brown-family/craft-commit.git"
@@ -30,5 +41,8 @@
   "devDependencies": {
     "@types/bun": "latest",
     "typescript": "^5.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
