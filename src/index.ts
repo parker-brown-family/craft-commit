@@ -5,4 +5,4 @@ export type {
   ValidateOptions,
   ValidationResult,
 } from "./validate.js";
-export { formatHuman, formatJson } from "./format.js";
+export { formatHuman, formatJson, DOCTRINE_BRIEF } from "./format.js";
